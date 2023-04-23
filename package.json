@@ -1,0 +1,44 @@
+{
+  "name": "imgbb-upload",
+  "version": "1.0.0",
+  "description": "imgbb-upload is a lightweight Node.js library for uploading images to the ImgBB API. It provides a simple and easy-to-use interface for uploading images and retrieving their URLs.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "imgbb",
+    "image upload",
+    "image hosting",
+    "image hosting api",
+    "image hosting service",
+    "image storage",
+    "image storage api",
+    "image storage service"
+  ],
+  "scripts": {
+    "build": " tsc",
+    "prepare": "npm run build"
+  },
+  "author": "Sahil Verma<sahilverma.webdev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "axios": "^1.3.2"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilverma-dev/imgbb-upload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sahilverma-dev/imgbb-upload/issues"
+  },
+  "homepage": "https://github.com/sahilverma-dev/imgbb-upload#readme",
+  "files": [
+    "dist/**/*"
+  ]
+}
