@@ -10,7 +10,6 @@ export interface ImgbbUploadOptions {
   name?: string;
   expiration?: number;
 }
-
 export interface Data {
   id: string;
   title: string;
