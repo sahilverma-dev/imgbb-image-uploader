@@ -4,24 +4,30 @@
 
 `imgbb-upload` is a lightweight Node.js library for uploading images to the ImgBB API. It provides a simple and easy-to-use interface for uploading images and retrieving their URLs.
 
-## Installation
+## Usage
 
-You can install imgbb-upload using npm:
+1. Create account on imgbb website.
+
+https://imgbb.com/
+
+2. Go to the imgbb API page and create a new API key.
+
+https://api.imgbb.com/
+
+3. Install imgbb-upload using npm:
 
 ```shell
 npm install imgbb-upload
 ```
 
-## Usage
-
-Here's an example of how to use imgbb-upload:
+4.  Here's an example of how to use imgbb-upload:
 
 ```javascript
-const imgbbUpload = require("imgbb-upload");
+import imgbbUpload "imgbb-upload";
 
 // Upload an image to ImgBB
 const apiKey = "your-api-key-here";
-const imagePath = "path-to-your-image"; //
+const imagePath = "path-to-your-image";
 
 imgbbUpload(apiKey, imagePath)
   .then((url) => {
@@ -32,10 +38,10 @@ imgbbUpload(apiKey, imagePath)
   });
 ```
 
-You can also specify additional options when uploading an image, such as the image name and expiration time:
+5. You can also specify additional options when uploading an image, such as the image name and expiration time:
 
 ```javascript
-const imgbbUpload = require("imgbb-upload");
+import imgbbUpload "imgbb-upload";
 
 // Upload an image to ImgBB with additional options
 const apiKey = "your-api-key-here";
@@ -54,13 +60,9 @@ imgbbUpload(apiKey, imagePath, options)
   });
 ```
 
-## API
-
-Uploads an image to the ImgBB API and returns its URL.
-
 #### Parameters
 
-- `apiKey`: The ImgBB API key to use for authentication.
+- `key`: The ImgBB API key to use for authentication.
 - `image`: The path or URL of the image to upload. Can be a local file path, a binary file, or base64-encoded data.
 - `options` (optional): Additional options for the image upload. Can include the image name and expiration time.
 
