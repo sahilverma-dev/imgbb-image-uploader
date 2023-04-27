@@ -13,7 +13,6 @@ const imgbbUpload: imgbbUploadType = async ({
   try {
     const params: Record<string, string> = {
       key,
-      image,
     };
 
     if (expiration !== undefined) {
@@ -24,12 +23,12 @@ const imgbbUpload: imgbbUploadType = async ({
       params.name = name;
     }
 
-    const response = await fetch(url, {
+    const formData = new FormData();
+    formData.append("image", image);
+
+    const response = await fetch(`${url}?${new URLSearchParams(params)}`, {
       method: "POST",
-      body: new URLSearchParams(params),
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
+      body: formData,
     });
 
     const data = await response.json();
