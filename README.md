@@ -1,8 +1,8 @@
-# imgbb-upload
+# imgbb-image-uploader
 
-![imgbb-upload](./images/poster.png "IMGBB upload")
+![imgbb-image-uploader](./images/poster.png "IMGBB upload")
 
-`imgbb-upload` is a lightweight Node.js library for uploading images to the ImgBB API. It provides a simple and easy-to-use interface for uploading images and retrieving their URLs.
+`imgbb-image-uploader` is a lightweight Node.js library for uploading images to the ImgBB API. It provides a simple and easy-to-use interface for uploading images and retrieving their URLs.
 
 ## Usage
 
@@ -14,16 +14,16 @@ https://imgbb.com/
 
 https://api.imgbb.com/
 
-3. Install imgbb-upload using npm:
+3. Install imgbb-image-uploader using npm:
 
 ```shell
-npm install imgbb-upload
+npm install imgbb-image-uploader
 ```
 
-4.  Here's an example of how to use imgbb-upload:
+4.  Here's an example of how to use imgbb-image-uploader:
 
 ```javascript
-import imgbbUpload "imgbb-upload";
+import imgbbUpload "imgbb-image-uploader";
 
 // Upload an image to ImgBB
 const apiKey = "your-api-key-here";
@@ -41,7 +41,7 @@ imgbbUpload(apiKey, imagePath)
 5. You can also specify additional options when uploading an image, such as the image name and expiration time:
 
 ```javascript
-import imgbbUpload "imgbb-upload";
+import imgbbUpload "imgbb-image-uploader";
 
 // Upload an image to ImgBB with additional options
 const apiKey = "your-api-key-here";
@@ -83,4 +83,4 @@ This library is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/sahilverma-dev/imgbb-upload.
+Bug reports and pull requests are welcome on GitHub at https://github.com/sahilverma-dev/imgbb-image-uploader.
