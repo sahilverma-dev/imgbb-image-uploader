@@ -6,9 +6,9 @@ export interface Root {
 
 export interface ImgbbUploadOptions {
   key: string;
-  image: string;
-  name?: string;
-  expiration?: number;
+  image: File;
+  name?: string | null;
+  expiration?: number | null;
 }
 export interface Data {
   id: string;

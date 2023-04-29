@@ -1,8 +1,8 @@
-import { Data, ImgbbUploadOptions } from "./interface";
+import { ImgbbUploadOptions, Root } from "./interface";
 
 const url = "https://api.imgbb.com/1/upload";
 
-type imgbbUploadType = (options: ImgbbUploadOptions) => Promise<Data>;
+type imgbbUploadType = (options: ImgbbUploadOptions) => Promise<Root>;
 
 const imgbbUpload: imgbbUploadType = async ({
   key,
@@ -15,11 +15,11 @@ const imgbbUpload: imgbbUploadType = async ({
       key,
     };
 
-    if (expiration !== undefined) {
+    if (expiration) {
       params.expiration = expiration.toString();
     }
 
-    if (name !== undefined) {
+    if (name) {
       params.name = name;
     }
 
