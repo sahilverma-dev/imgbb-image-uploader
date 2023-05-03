@@ -1,6 +1,6 @@
 # imgbb-image-uploader
 
-![imgbb-image-uploader](./images/poster.png "IMGBB upload")
+![imgbb-image-uploader](https://raw.githubusercontent.com/sahilverma-dev/imgbb-image-uploader/HEAD/images/poster.png "IMGBB upload")
 
 `imgbb-image-uploader` is a lightweight Node.js library for uploading images to the ImgBB API. It provides a simple and easy-to-use interface for uploading images and retrieving their URLs.
 
