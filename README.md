@@ -22,12 +22,11 @@ npm install imgbb-image-uploader
 
 4.  Here's an example of how to use imgbb-image-uploader:
 
-```javascript
-import {imgbbUpload} "imgbb-image-uploader";
-
+```ts
+import { imgbbUpload } from "imgbb-image-uploader";
 
 imgbbUpload({
-  key: "your-api-key",// your imgbb api key
+  key: "your-api-key", // your imgbb api key
   image: image, // image selected from the file input
 })
   .then((data) => {
@@ -40,16 +39,16 @@ imgbbUpload({
 
 5. You can also specify additional options when uploading an image, such as the image name and expiration time:
 
-```javascript
-import imgbbUpload "imgbb-image-uploader";
+```ts
+import imgbbUpload from "imgbb-image-uploader";
 
 // Upload an image to ImgBB with additional options
 
 imgbbUpload({
-  key: "your-api-key",// your imgbb api key
+  key: "your-api-key", // your imgbb api key
   image: image, // image selected from the file input
-  expiration: 600,// 10 mins
-  name: 'name-of-the-image', // name of the image
+  expiration: 600, // 10 mins
+  name: "name-of-the-image", // name of the image
 })
   .then((data) => {
     console.log("Image uploaded to ImgBB:", data);
@@ -59,7 +58,7 @@ imgbbUpload({
   });
 ```
 
-#### Parameters
+### Parameters
 
 - `key`: The ImgBB API key to use for authentication.
 - `image`: The image selected from the file input.
